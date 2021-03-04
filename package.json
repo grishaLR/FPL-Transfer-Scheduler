@@ -7,7 +7,7 @@
     "webpack": "webpack",
     "start": " NODE_ENV=production node server/server.js",
     "build": "NODE_ENV=production webpack",
-    "dev": " NODE_ENV=development webpack-dev-server --open & nodemon server/server.js",
+    "dev": " NODE_ENV=development webpack serve & nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -28,13 +28,15 @@
     "path": "0.12.7",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
-    "webpack": "5.24.2",
-    "webpack-cli": "4.5.0",
-    "webpack-dev-server": "3.11.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
     "webpack-devserver": "^0.0.6"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "isomorphic-fetch": "^3.0.0",
+    "mongoose": "^5.11.18",
     "nodemon": "^2.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

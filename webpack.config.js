@@ -11,7 +11,8 @@ module.exports = {
   },
   // resolve: { modules: [path.resolve(__dirname, "build"), "node_modules"] },
   devServer: {
-    contentBase: path.join(__dirname, "build"),
+    publicPath: '/',
+    contentBase: path.join(__dirname, "/build"),
   },
   module: {
     rules: [
