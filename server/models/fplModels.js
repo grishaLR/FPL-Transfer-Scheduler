@@ -16,9 +16,13 @@ mongoose
 const { Schema } = mongoose;
 
 const playerSchema = new Schema({
-  playerName: { type: String, required: true },
+  playerName: { type: String, required: true, unique: true },
+});
+
+const teamSchema = new Schema({
+  playerName: { type: String, required: true, unique: true },
 });
 
 const Player = mongoose.model('player', playerSchema);
-
-module.exports = { Player };
+const Team = mongoose.model('team', teamSchema);
+module.exports = { Player, Team };

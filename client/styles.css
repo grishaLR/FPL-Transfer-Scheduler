@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+  font-family: 'Montserrat';
+  background-color: aquamarine;
+}
+h1 {
+  margin-left: 15%;
+}
+h3 {
+  margin-left: 25%;
+}
+.buttonContainer{
+  margin-left: 25%;
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px;
+  /* grid-template-rows: 25% 100px auto; */
+}
+button:hover{
+  background-color: rgb(103, 9, 103);
+}
+button:active{
+  background-color: springgreen;
+}
+button:focus{
+  background-color: springgreen;
+}
+.playerButton {
+  /* display: grid;
+  grid-template: auto/repeat(5, 20%); */
+  height: 60px;
+  width: 100px;
+  background-color: plum;
+  margin: 4px;
+}

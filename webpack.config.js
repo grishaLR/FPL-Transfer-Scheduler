@@ -11,8 +11,9 @@ module.exports = {
   },
   // resolve: { modules: [path.resolve(__dirname, "build"), "node_modules"] },
   devServer: {
-    publicPath: '/',
+    publicPath: '/build/',
     contentBase: path.join(__dirname, "/build"),
+    proxy: { '/api': 'http://localhost:3000' },
   },
   module: {
     rules: [
